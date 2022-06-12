@@ -5,8 +5,7 @@ export const Team = (props) => {
         <div className='col-md-8 col-md-offset-2 section-title'>
           <h2>Meet the Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          This product is developed by Nischal Koppula and Aditya Gupta, students of B.Tech in Civil Engineering at IIT Tirupati, mentored by Prof. Roshan Srivastav, Assistant Professor at IIT Tirupati. The main interests of the team include building robust technological solutions that could be of use to hydrologists all around the world.
           </p>
         </div>
         <div id='row'>

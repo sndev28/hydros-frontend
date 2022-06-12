@@ -1,0 +1,379 @@
+#chartContainer {
+    width: 100%;
+    height: 500px;
+}
+
+.graphs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    /* padding-top: 10vh; */
+    padding-bottom: 10vh;
+}
+
+.graph-custom {
+    /* display: none; */
+    padding-top: 20px;
+    border: #777;
+    box-shadow: 0px 0px 5px 0px gray;
+    margin: 10px;
+}
+
+
+
+.data-item {
+    padding-left: 2rem;
+}
+
+.graph-container {
+    padding-bottom: 20vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-heading {
+    color: black;
+    font-weight: bold;
+}
+
+.item-value {
+    color: blue
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    width: 400px;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.5rem;
+    box-shadow: 0px 0px 5px 0px gray,
+    0px 0px 10px 2px gray;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px gray,
+    0px 0px 20px 10px gray;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: white;
+}
+.card-value {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-img {
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10vh;
+    text-decoration: underline;
+    color: black;
+}
+
+.card:hover > .card-info .card-title, .card:hover > .card-info .card-value {
+    color: black;
+}
+
+.card:hover > .card-img img {
+    filter: invert();
+    /* transition-duration: 0s; */
+}
+
+
+.statistics-container {
+    width: 45vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px gray,
+    0px 0px 10px 2px gray;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.statistics-inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.statistics-title {
+    color: white;
+    font-size: 3rem;
+}
+
+.statistics {
+    width: 100%;
+}
+
+
+.statistics-category {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.category-label {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.statistics-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.item-label {
+    color: white;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.bar {
+    flex: 6;
+    width: 100%;
+    height: 6px;
+    background-color: #fff3;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.mouse-over-details {
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 2px;
+    font-weight: bold;
+
+}
+
+
+.invisible {
+    flex: 1;
+}
+
+.button {
+    border: 1px solid #333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.statistics-data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.statistics-container:hover {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px gray,
+    0px 0px 20px 10px gray;
+}
+
+.statistics-container:hover > .statistics-inner-container .statistics-title {
+    color: black;
+}
+
+.statistics-container:hover .item-label {
+    color: black;
+}
+
+.statistics-container:hover .bar {
+    background-color: #0002;
+}
+
+.graph-select {
+    position: relative;
+}
+
+.graph-select .dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+
+.graph-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+
+
+table, td, th, tr {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+table {
+    border-radius: 5px;
+}
+
+
+
+
+.graph-selector-container {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #aaa;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
+
+.selector-inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.controllers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* width: 10%;   */
+    border: 1px solid #aaa;
+    font-size: 2rem;
+}
+
+.controller-item {
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.controller-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.graph-display {
+    display: flex;
+    min-width: 80vw;
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px solid #aaa;
+}
+
+.graph-display-item {
+    display: none;
+}
+
+.graph-in-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    padding-bottom: 5vh;
+}
+
+.dropdown {
+    margin: 4px;
+}
